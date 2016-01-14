@@ -36,7 +36,13 @@ public String pigLatin(String sWord)
 	else if(sWord.substring(1,2).equals("u")){
 		return sWord.substring(2, sWord.length() - 1) + sWord.substring(0, 2) + "ay";
 	}
-	else if()
+	else if(firstv == 0){
+		return sWord + "way";
+	}
+	else if(firstv != 0){
+
+		return sWord.substring(firstv, sWord.length()) + sWord.substring(0, firstv) + "ay";
+	}
 	else
 	{
 		return "ERROR!";
